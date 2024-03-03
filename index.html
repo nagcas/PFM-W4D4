@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials, Corso Epicode, Web Developer">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gianluca Chiaravalloti">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Search your Job</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <!-- Logo aziendale -->
+            <div class="logo">
+                <a href="/">
+                    Se<span>@</span>rchs Jobs
+                </a>
+            </div>
+
+            <!-- Menu principale -->
+            <div class="menu">
+                <a href="/">home</a>
+                <a href="/">Search</a>
+                <a href="/">Info</a>
+                <a href="/">LogOut</a>
+                <button class="user-nav">G</button><span>ianluca</span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Content Main -->
+    <main>
+        <!-- Banner titolo -->
+        <div class="banner">
+            <h1>Benvenuto su Se<span>@</span>rchs Jobs</h1>
+            <h3>Ricerca la tua Professione</h3>
+        </div>
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Caselle di input -->
+            <input type="text" name="jobInput" id="jobInput" placeholder="Cerca il tuo lavoro...">
+            <input type="text" name="locationInput" id="locationInput" placeholder="Inserisci la località...">
+            
+            <!-- Button ricerca e reset -->
+            <button id="searchBtn" type="submit">Cerca</button>  
+            <button id="resetBtn" type="submit">Reset</button>
+        </div>
+
+        <!-- Informazioni sulla pagina -->
+        <div class="presentation">
+            <h2>Benvenuti su Se@rch Jobs - Il vostro motore di ricerca lavoro per programmatori</h2>
+            <p>
+                Se siete programmatori in cerca di nuove opportunità di lavoro stimolanti e gratificanti, siete nel posto giusto! Se<span>@</span>rch Jobs è il vostro compagno 
+                affidabile nella ricerca di posizioni lavorative nel vasto mondo della programmazione. Sia che siate esperti veterani del codice o talenti emergenti 
+                desiderosi di fare il grande salto nel settore tecnologico, la nostra piattaforma è progettata per aiutarvi a trovare l'opportunità perfetta per voi.
+            </p>
+        </div>
+
+        <!-- Gestione degli eventi errori e risultati non presenti -->
+        <div id="errors" style="display: none;">
+            <p>Dati inseriti non corretti...</p>
+            <p class="note">Note: devi inserire nella casella di ricerca job una parola con più di due caratteri e nella
+                casella di ricerca località una parola con minimo due caratteri.</p>
+            <p>Esempio:</p>
+            <p>Cerca il tuo lavoro: dev</p>
+            <p>Inserisci località: us</p>
+        </div>
+        <div id="results" style="display: none;">
+            <p>Nessun risultato trovato...</p>
+        </div>
+
+        <!-- Gestione dei risultati di ricerca -->
+        <div id="contentJobs" style="display: none;">
+            <h3 id="cont"></h3>    
+            <ul id="searchList"></ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <div class="indirizzo">
+                <p>Se<span>@</span>rch Jobs</p>
+                <p>Via Buona Fortuna BF</p>
+                <p>tel. 0000 00000</p>
+
+                <!-- Link pulsanti social  -->
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script JavaScript Personal -->
+    <script src="js/script.js"></script>
+
+    <!-- Script Fontawesome -->
+    <script src="https://kit.fontawesome.com/21c8470c2b.js" crossorigin="anonymous"></script>
+</body>
+</html>

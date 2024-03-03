@@ -1,0 +1,275 @@
+/* 
+    Test fine modulo
+    data:  04.03.2024
+    Gianluca Chiaravalloti
+*/
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* -------------------------- end reset css */
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 5px 10px rgb(220, 220, 220);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-size: 1.2em;
+    background-color: #fff;
+}
+
+/* Logo aziendale */
+.logo {
+    font-size: 1.2em;
+}
+
+.logo span {
+    color: #f4511e;
+    font-size: 1.5em;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a:visited, a:link {
+    color: #656c75;
+}
+
+.logo a:hover {
+    color: #333;
+    cursor: pointer;
+}
+/* ----------- end logo aziendale css */
+
+/* Menu principale */
+.menu a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.menu a:visited, a:link {
+    color: #656c75;
+}
+
+.menu a:hover {
+    color: #f4511e;
+    cursor: pointer;
+}
+
+.menu {
+    align-items: center;
+    color: #656c75;
+}
+
+.user-nav {
+    width: 40px;
+    height: 40px;
+    background-color: #f4511e;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.user-nav:hover {
+    background-color: #656c75;
+}
+/* ----------- end menu principale css */
+/* -------------------------- end navbar */
+
+/* Banner, titolo e immagine */
+.banner {
+    height: 300px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 30px;
+    background-image: url(https://picsum.photos/id/119/1024/300);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 10px rgb(220, 220, 220);
+}
+
+.banner h1 {
+    margin-top: 80px;
+    font-size: 3.0em;
+    color: #333941;
+}
+
+.banner span {
+    color: #f4511e;
+    font-size: 1.5em;
+}
+
+.banner h3 {
+    color: #656c75
+}
+/* -------------------------- end banner, titolo e immagine */
+
+/* Container  */
+.container {
+    width: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Caselle di input */
+input {
+    width: 20%;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 5px 10px rgb(220, 220, 220);
+}
+
+input:hover {
+    border: 1px solid #f4511e;
+}
+/* ----------- end caselle di input css */
+
+/* Button di ricerca e reset */
+#searchBtn, #resetBtn {
+    width: 100px;
+    padding: 11px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    background-color: #f4511e;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(220, 220, 220);
+}
+
+#searchBtn:hover, #resetBtn:hover {
+    background-color: #656c75;
+}
+
+.presentation {
+    text-align: center;
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.presentation h2 {
+    padding: 10px;
+    color: #f4511e;
+}
+
+.presentation span {
+    color: #f4511e;
+}
+/* ----------- end button di ricerca e reset css */
+
+/* Visualizzazione degli eventi errori e risultati */
+#errors, #results {
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+/* Visualizza eventuali errori nella ricerca */
+#errors p {
+    padding: 5px;
+}
+
+.note {
+    color: #000;
+}
+
+/* Visualizza il contenuto della ricerca */
+#contentJobs {
+    height: auto;
+    margin: 20px 40px 20px 40px;
+    padding: 20px;
+    border: 1px solid #f4511e;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(220, 220, 220);
+}
+
+/* Visualizza il contenuto del numero delle occorrenze trovate */
+#cont {
+    background-color: #9b9ea1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Visualizza il contenuto della ricerca job e location trovati */
+#contentJobs ul li {
+    margin-top: 5px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#searchList li:hover {
+    color: #f4511e;
+}
+/* -------------------------- end visualizzazione degli eventi errori e risultati */
+/* -------------------------- end container */
+
+/* Footer */
+.info {
+    height: auto;
+    background-color: #656c75;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.indirizzo {
+    padding: 25px;
+}
+
+.indirizzo p {
+    font-size: 1.2em;
+}
+
+.indirizzo span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f4511e;
+}
+
+.indirizzo i {
+    font-size: 1.5em;
+    margin: 20px 10px
+}
+
+.indirizzo i:hover {
+    color: #f4511e;
+    cursor: pointer;
+}
+/* -------------------------- end footer */
+
+
+
+
+
+
