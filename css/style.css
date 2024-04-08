@@ -1,0 +1,240 @@
+/* 
+    CSS Custom
+    Data 08.04.2024
+    by Gianluca Chiaravalloti
+*/
+
+/* Setup */
+body {
+    background-color: #282828;
+    overflow-x: hidden;
+}
+
+header,
+.section-header {
+    margin-left: 40px;
+    margin-right: 60px;
+}
+/* -------------------- End Setup */
+
+/* Navbar */
+nav {
+    height: 80px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.navbar-nav li a:hover {
+    opacity: 0.25;
+}
+
+.navbar-nav {
+    color: #fff;
+}
+
+.nav-item {
+    list-style-type: none;
+    color: #fff;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+/* Menù offcanvas */
+.offcanvas-header,
+.offcanvas-body {
+    background-color: #282828;
+    color: #fff;
+}
+
+.navbar-toggler:focus, 
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.search,
+.category,
+.info {
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.search:hover,
+.info:hover {
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.category span {
+    text-transform: uppercase;
+}
+
+.user {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.nav-item.dropdown:hover {
+    cursor: pointer;
+}
+
+/* Dropdown menù */
+.dropdown-menu img {
+    margin-left: 10px;
+}
+
+.dropdown-menu a {
+    color: #000;
+}
+
+span.user-name {
+    margin-right: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #282828;
+    color: #fff;
+}
+/* -------------------- End navbar */
+
+/* Section Header */
+.title-section {
+    color: #fff;
+}
+
+.shows {
+    margin-left: 40px;
+}
+
+.filter,
+.grid {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #fff;
+    font-size: 0.9rem;
+}
+
+.filter:hover, 
+.grid:hover {
+    opacity: 0.25;
+    cursor: pointer;
+}
+/* -------------------- End Section Header */
+
+/* Section Main and Card */
+.section-cards {
+    max-width: 100vw;
+    margin-left: 40px;
+}
+
+.card:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/* -------------------- End Section Main and Card */
+
+/* Footer */
+.icons i {
+    margin-right: 30px;
+}
+
+.icons i:hover {
+    opacity: 0.25;
+}
+/* -------------------- End Footer */
+
+/* Small Devices */
+@media (max-width: 390px) {
+
+    header,
+    .section-cards,
+    .section-header {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    header,
+    .section-header {
+        margin-right: 20px;
+        margin-right: 20px;
+    }
+
+    .title-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .no-visible {
+        display: none;
+    }
+
+    .section-cards {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    footer {
+        margin-left: 20px;
+    }
+}
+/* -------------------- End Small Devices */
+
+/* Tablet and Large Display */
+@media (min-width: 576px) and (min-width: 992px) {
+    /* Animation Card */
+
+    .animationCard {
+        /* position: relative; */
+        animation: animation;
+        animation-duration: 3.2s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes animation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /* -------------------- End Animation Card */
+
+    /* Transition Hover Card */
+    .card {
+        background-color: #282828;
+        transition: 0.3s ease-in;
+        /* overflow: hidden; */
+    }
+    
+    .card:hover {
+        z-index: 1001;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px 5px #c9c9c9;
+        transform: scale(1.20);
+    }
+    /* -------------------- End Transition Hover Card */
+}
+/* -------------------- End Large Display */
+
+
+
+
