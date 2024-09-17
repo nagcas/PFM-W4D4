@@ -1,6 +1,8 @@
 # W4D4 PROVA DI FINE MODULO
 ### Data 08.04.2024
 
+[Visita la pagina online](https://nagcas.github.io/PFM-W4D4/)
+
 ##Netflix Home Page Clone 🎬
 
 ###Descrizione del progetto
@@ -18,3 +20,5 @@ Questo progetto è stato il compito finale di CSS avanzato, dove ho ricreato la 
 - JavaScript (per le animazioni avanzate)
 
 <img src="./mockap/netflix-home.png" alt="Mockup Netflix">
+
+
